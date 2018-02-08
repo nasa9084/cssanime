@@ -1,0 +1,314 @@
+.cube {
+  dispay: block;
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.8, 0.1, 0.2, 0.9); }
+
+.red {
+  background: #f55; }
+
+.corn {
+  animation-delay: .05s; }
+
+.green {
+  background: #5f5; }
+
+.vert {
+  animation-delay: .1s; }
+
+.blue {
+  background: #55f; }
+
+.gray {
+  background: #555; }
+
+.center {
+  animation-timing-function: linear; }
+
+.tl.corn {
+  top: 100px;
+  left: 100px;
+  animation-name: anitlcorn; }
+
+@keyframes anitlcorn {
+  25% {
+    transform: translateY(100px); }
+  50% {
+    transform: translate(100px, 100px); }
+  75% {
+    transform: translateX(100px); } }
+.tr.corn {
+  top: 100px;
+  left: 200px;
+  animation-name: anitrcorn; }
+
+@keyframes anitrcorn {
+  25% {
+    transform: translateX(-100px); }
+  50% {
+    transform: translate(-100px, 100px); }
+  75% {
+    transform: translateY(100px); } }
+.bl.corn {
+  top: 200px;
+  left: 100px;
+  animation-name: aniblcorn; }
+
+@keyframes aniblcorn {
+  25% {
+    transform: translateX(100px); }
+  50% {
+    transform: translate(100px, -100px); }
+  75% {
+    transform: translateY(-100px); } }
+.br.corn {
+  top: 200px;
+  left: 200px;
+  animation-name: anibrcorn; }
+
+@keyframes anibrcorn {
+  25% {
+    transform: translateY(-100px); }
+  50% {
+    transform: translate(-100px, -100px); }
+  75% {
+    transform: translateX(-100px); } }
+.tl.hrzn {
+  top: 115px;
+  left: 100px;
+  animation-name: anitlhrzn; }
+
+@keyframes anitlhrzn {
+  25% {
+    transform: translateY(70px); }
+  50% {
+    transform: translate(100px, 70px); }
+  75% {
+    transform: translateX(100px); } }
+.tr.hrzn {
+  top: 115px;
+  left: 200px;
+  animation-name: anitrhrzn; }
+
+@keyframes anitrhrzn {
+  25% {
+    transform: translateX(-100px); }
+  50% {
+    transform: translate(-100px, 70px); }
+  75% {
+    transform: translateY(70px); } }
+.bl.hrzn {
+  top: 185px;
+  left: 100px;
+  animation-name: aniblhrzn; }
+
+@keyframes aniblhrzn {
+  25% {
+    transform: translateX(100px); }
+  50% {
+    transform: translate(100px, -70px); }
+  75% {
+    transform: translateY(-70px); } }
+.br.hrzn {
+  top: 185px;
+  left: 200px;
+  animation-name: anibrhrzn; }
+
+@keyframes anibrhrzn {
+  25% {
+    transform: translateY(-70px); }
+  50% {
+    transform: translate(-100px, -70px); }
+  75% {
+    transform: translateX(-100px); } }
+.tl.vert {
+  top: 100px;
+  left: 115px;
+  animation-name: anitlvert; }
+
+@keyframes anitlvert {
+  25% {
+    transform: translateY(100px); }
+  50% {
+    transform: translate(70px, 100px); }
+  75% {
+    transform: translateX(70px); } }
+.tr.vert {
+  top: 100px;
+  left: 185px;
+  animation-name: anitrvert; }
+
+@keyframes anitrvert {
+  25% {
+    transform: translateX(-70px); }
+  50% {
+    transform: translate(-70px, 100px); }
+  75% {
+    transform: translateY(100px); } }
+.bl.vert {
+  top: 200px;
+  left: 115px;
+  animation-name: aniblvert; }
+
+@keyframes aniblvert {
+  25% {
+    transform: translateX(70px); }
+  50% {
+    transform: translate(70px, -100px); }
+  75% {
+    transform: translateY(-100px); } }
+.br.vert {
+  top: 200px;
+  left: 185px;
+  animation-name: anibrvert; }
+
+@keyframes anibrvert {
+  25% {
+    transform: translateY(-100px); }
+  50% {
+    transform: translate(-70px, -100px); }
+  75% {
+    transform: translateX(-70px); } }
+.ctl {
+  top: 130px;
+  left: 130px;
+  animation-name: anictl; }
+
+@keyframes anictl {
+  25% {
+    transform: translateY(40px); }
+  50% {
+    transform: translate(40px, 40px); }
+  75% {
+    transform: translateX(40px); } }
+.ctc {
+  top: 130px;
+  left: 150px;
+  animation-name: anictc; }
+
+@keyframes anictc {
+  12.5% {
+    transform: translateX(-20px); }
+  25% {
+    transform: translate(-20px, 20px); }
+  37.5% {
+    transform: translate(-20px, 40px); }
+  50% {
+    transform: translateY(40px); }
+  62.5% {
+    transform: translate(20px, 40px); }
+  75% {
+    transform: translate(20px, 20px); }
+  87.5% {
+    transform: translateX(20px); } }
+.ctr {
+  top: 130px;
+  left: 170px;
+  animation-name: anictr; }
+
+@keyframes anictr {
+  25% {
+    transform: translateX(-40px); }
+  50% {
+    transform: translate(-40px, 40px); }
+  75% {
+    transform: translateY(40px); } }
+.ccl {
+  top: 150px;
+  left: 130px;
+  animation-name: aniccl; }
+
+@keyframes aniccl {
+  12.5% {
+    transform: translateY(20px); }
+  25% {
+    transform: translate(20px, 20px); }
+  37.5% {
+    transform: translate(40px, 20px); }
+  50% {
+    transform: translateX(40px); }
+  62.5% {
+    transform: translate(40px, -20px); }
+  75% {
+    transform: translate(20px, -20px); }
+  87.5% {
+    transform: translateY(-20px); } }
+.ccc {
+  top: 150px;
+  left: 150px;
+  animation-name: aniccc; }
+
+@keyframes aniccc {
+  50% {
+    transform: rotate(90deg); }
+  100% {
+    transform: rotate(180deg); } }
+.ccr {
+  top: 150px;
+  left: 170px;
+  animation-name: aniccr; }
+
+@keyframes aniccr {
+  12.5% {
+    transform: translateY(-20px); }
+  25% {
+    transform: translate(-20px, -20px); }
+  37.5% {
+    transform: translate(-40px, -20px); }
+  50% {
+    transform: translateX(-40px); }
+  62.5% {
+    transform: translate(-40px, 20px); }
+  75% {
+    transform: translate(-20px, 20px); }
+  87.5% {
+    transform: translateY(20px); } }
+.cbl {
+  top: 170px;
+  left: 130px;
+  animation-name: anicbl; }
+
+@keyframes anicbl {
+  25% {
+    transform: translateX(40px); }
+  50% {
+    transform: translate(40px, -40px); }
+  75% {
+    transform: translateY(-40px); } }
+.cbc {
+  top: 170px;
+  left: 150px;
+  animation-name: anicbc; }
+
+@keyframes anicbc {
+  12.5% {
+    transform: translateX(20px); }
+  25% {
+    transform: translate(20px, -20px); }
+  37.5% {
+    transform: translate(20px, -40px); }
+  50% {
+    transform: translateY(-40px); }
+  62.5% {
+    transform: translate(-20px, -40px); }
+  75% {
+    transform: translate(-20px, -20px); }
+  87.5% {
+    transform: translateX(-20px); } }
+.cbr {
+  top: 170px;
+  left: 170px;
+  animation-name: anicbr; }
+
+@keyframes anicbr {
+  25% {
+    transform: translateY(-40px); }
+  50% {
+    transform: translate(-40px, -40px); }
+  75% {
+    transform: translateX(-40px); } }
+
+/*# sourceMappingURL=style.css.map */

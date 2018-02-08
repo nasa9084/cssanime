@@ -1,0 +1,339 @@
+.cube {
+    dispay: block;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.8, 0.1, 0.2, 0.9);
+}
+
+.red {
+    background: #f55;
+}
+
+.corn {
+    animation-delay: .05s;
+}
+
+.green {
+    background: #5f5;
+}
+
+.vert {
+    animation-delay: .1s;
+}
+
+.blue {
+    background: #55f;
+}
+
+.gray {
+    background: #555;
+}
+
+.center {
+    animation-timing-function: linear;
+}
+
+$X: 100px;
+$Y: 100px;
+$D: 300 - $X - $Y;
+
+.tl.corn {
+    top: $X;
+    left: $Y;
+    animation-name: anitlcorn;
+}
+
+@keyframes anitlcorn {
+    25% { transform: translateY($D); }
+    50% { transform: translate($D, $D); }
+    75% { transform: translateX($D); }
+}
+
+.tr.corn {
+    top: $Y;
+    left: $X+$D;
+    animation-name: anitrcorn;
+}
+
+@keyframes anitrcorn {
+    0%, 100% {}
+    25% { transform: translateX(-$D); }
+    50% { transform: translate(-$D, $D); }
+    75% { transform: translateY($D); }
+}
+
+.bl.corn {
+    top: $Y+$D;
+    left: $X;
+    animation-name: aniblcorn;
+}
+
+@keyframes aniblcorn {
+    0%, 100% {}
+    25% { transform: translateX($D); }
+    50% { transform: translate($D, -$D); }
+    75% { transform: translateY(-$D); }
+}
+
+.br.corn {
+    top: $Y+$D;
+    left: $X+$D;
+    animation-name: anibrcorn;
+}
+
+@keyframes anibrcorn {
+    0%, 100% {}
+    25% { transform: translateY(-$D); }
+    50% { transform: translate(-$D, -$D); }
+    75% { transform: translateX(-$D); }
+}
+
+$bd: 15px;
+$BD: $D - ($bd * 2);
+
+.tl.hrzn {
+    top: $Y + $bd;
+    left: $X;
+    animation-name: anitlhrzn;
+}
+
+@keyframes anitlhrzn {
+    0%, 100% {}
+    25% { transform: translateY($BD); }
+    50% { transform: translate($D, $BD); }
+    75% { transform: translateX($D); }
+}
+
+.tr.hrzn {
+    top: $Y + $bd;
+    left: $X + $D;
+    animation-name: anitrhrzn;
+}
+
+@keyframes anitrhrzn {
+    0%, 100% {}
+    25% { transform: translateX(-$D); }
+    50% { transform: translate(-$D, $BD); }
+    75% { transform: translateY($BD); }
+}
+
+.bl.hrzn {
+    top: $Y + $D - $bd;
+    left: $X;
+    animation-name: aniblhrzn;
+}
+
+@keyframes aniblhrzn {
+    0%, 100% {}
+    25% { transform: translateX($D); }
+    50% { transform: translate($D, -$BD); }
+    75% { transform: translateY(-$BD); }
+}
+
+.br.hrzn {
+    top: $Y + $D - $bd;
+    left: $X + $D;
+    animation-name: anibrhrzn;
+}
+
+@keyframes anibrhrzn {
+    0%, 100% {}
+    25% { transform: translateY(-$BD); }
+    50% { transform: translate(-$D, -$BD); }
+    75% { transform: translateX(-$D); }
+}
+
+.tl.vert {
+    top: $Y;
+    left: $X + $bd;
+    animation-name: anitlvert;
+}
+
+@keyframes anitlvert {
+    0%, 100% {}
+    25% { transform: translateY($D); }
+    50% { transform: translate($BD, $D); }
+    75% { transform: translateX($BD); }
+}
+
+.tr.vert {
+    top: $Y;
+    left: $X + $D - $bd;
+    animation-name: anitrvert;
+}
+
+@keyframes anitrvert {
+    0%, 100% {}
+    25% { transform: translateX(-$BD); }
+    50% { transform: translate(-$BD, $D); }
+    75% { transform: translateY($D); }
+}
+
+
+.bl.vert {
+    top: $Y + $D;
+    left: $X + $bd;
+    animation-name: aniblvert;
+}
+
+@keyframes aniblvert {
+    0%, 100% {}
+    25% { transform: translateX($BD); }
+    50% { transform: translate($BD, -$D); }
+    75% { transform: translateY(-$D); }
+}
+
+
+.br.vert {
+    top: $Y + $D;
+    left: $X + $D - $bd;
+    animation-name: anibrvert;
+}
+
+@keyframes anibrvert {
+    0%, 100% {}
+    25% { transform: translateY(-$D); }
+    50% { transform: translate(-$BD, -$D); }
+    75% { transform: translateX(-$BD); }
+}
+
+$CX: 130px;
+$CY: 130px;
+$unit: (300 - $CX - $CY)/2;
+$bi: $unit * 2;
+
+.ctl {
+    top: $CY;
+    left: $CX;
+    animation-name: anictl;
+}
+
+@keyframes anictl {
+    0%, 100% {}
+    25% { transform: translateY($bi); }
+    50% { transform: translate($bi, $bi); }
+    75% { transform: translateX($bi); }
+}
+
+.ctc {
+    top: $CY;
+    left: $CX + $unit;
+    animation-name: anictc;
+}
+
+@keyframes anictc {
+    0%, 100% {}
+    12.5% { transform: translateX(-$unit); }
+    25% { transform: translate(-$unit, $unit); }
+    37.5% { transform: translate(-$unit, $bi); }
+    50% { transform: translateY($bi); }
+    62.5% { transform: translate($unit, $bi); }
+    75% { transform: translate($unit, $unit); }
+    87.5% { transform: translateX($unit); }
+}
+
+.ctr {
+    top: $CY;
+    left: $CX + $bi;
+    animation-name: anictr;
+}
+
+@keyframes anictr {
+    0%, 100% {}
+    25% { transform: translateX(-$bi); }
+    50% { transform: translate(-$bi, $bi); }
+    75% { transform: translateY($bi); }
+}
+
+.ccl {
+    top: $CY + $unit;
+    left: $CX;
+    animation-name: aniccl;
+}
+
+@keyframes aniccl {
+    0%, 100% {}
+    12.5% { transform: translateY($unit); }
+    25% { transform: translate($unit, $unit); }
+    37.5% { transform: translate($bi, $unit); }
+    50% { transform: translateX($bi); }
+    62.5% { transform: translate($bi, -$unit); }
+    75% { transform: translate($unit, -$unit); }
+    87.5% { transform: translateY(-$unit); }
+}
+
+.ccc {
+    top: $CY + $unit;
+    left: $CX + $unit;
+    animation-name: aniccc;
+}
+
+@keyframes aniccc {
+    0% {}
+    50% { transform: rotate(90deg); }
+    100%{ transform: rotate(180deg); }
+}
+
+.ccr {
+    top: $CY + $unit;
+    left: $CX + $bi;
+    animation-name: aniccr;
+}
+
+@keyframes aniccr {
+    0%, 100% {}
+    12.5% { transform: translateY(-$unit); }
+    25% { transform: translate(-$unit, -$unit); }
+    37.5% { transform: translate(-$bi, -$unit); }
+    50% { transform: translateX(-$bi); }
+    62.5% { transform: translate(-$bi, $unit); }
+    75% { transform: translate(-$unit, $unit); }
+    87.5% { transform: translateY($unit); }
+}
+
+.cbl {
+    top: $CY + $bi;
+    left: $CX;
+    animation-name: anicbl;
+}
+
+@keyframes anicbl {
+    0%, 100% {}
+    25% { transform: translateX($bi); }
+    50% { transform: translate($bi, -$bi); }
+    75% { transform: translateY(-$bi); }
+}
+
+
+.cbc {
+    top: $CY + $bi;
+    left: $CX + $unit;
+    animation-name: anicbc;
+}
+
+@keyframes anicbc {
+    0%, 100% {}
+    12.5% { transform: translateX($unit); }
+    25% { transform: translate($unit, -$unit); }
+    37.5% { transform: translate($unit, -$bi); }
+    50% { transform: translateY(-$bi); }
+    62.5% { transform: translate(-$unit, -$bi); }
+    75% { transform: translate(-$unit, -$unit); }
+    87.5% { transform: translateX(-$unit); }
+}
+
+.cbr {
+    top: $CY + $bi;
+    left: $CX + $bi;
+    animation-name: anicbr;
+}
+
+@keyframes anicbr {
+    0%, 100% {}
+    25% { transform: translateY(-$bi); }
+    50% { transform: translate(-$bi, -$bi); }
+    75% { transform: translateX(-$bi); }
+}
